@@ -21,10 +21,10 @@
 # THE SOFTWARE.
 
 add_library(pixlib SHARED IMPORTED GLOBAL)
-set_property(TARGET pixlib PROPERTY IMPORTED_IMPLIB ${CMAKE_CURRENT_SOURCE_DIR}/bin/${CMAKE_GENERATOR_PLATFORM}/WinPixEventRuntime.lib)
+set_property(TARGET pixlib PROPERTY IMPORTED_IMPLIB ${CMAKE_CURRENT_SOURCE_DIR}/bin/x64/WinPixEventRuntime.lib)
 
 set(winpixevent_binary
-    ${CMAKE_CURRENT_SOURCE_DIR}/bin/${CMAKE_GENERATOR_PLATFORM}/WinPixEventRuntime.dll)
+    ${CMAKE_CURRENT_SOURCE_DIR}/bin/x64/WinPixEventRuntime.dll)
 
 set(winpixgpucapturer_binary
     ${CMAKE_CURRENT_SOURCE_DIR}/bin/WinPixGpuCapturer.dll)

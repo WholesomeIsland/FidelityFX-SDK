@@ -92,6 +92,8 @@ else()
     message(FATAL_ERROR "Unsupported target platform \"${CMAKE_GENERATOR_PLATFORM}\"")
 endif()
 
+set(FFX_PLATFORM_NAME x64)
+set(FFX_ALL)
 # Pre-compile shaders
 set(FFX_AUTO_COMPILE_SHADERS ON CACHE BOOL "Compile shaders automatically as a prebuild step.")
 
@@ -162,6 +164,7 @@ endif()
 add_compile_definitions(_UNICODE)
 add_compile_definitions(UNICODE)
 add_compile_definitions(_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR)
+add_compile_definitions(FFX_ALL)
 
 if(FFX_VS_VERSION STREQUAL 2015 OR FFX_VS_VERSION STREQUAL 2017)
     message(NOTICE "Forcing the SDK path for VS 2015 and VS 2017")
