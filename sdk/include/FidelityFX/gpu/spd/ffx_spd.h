@@ -1010,5 +1010,5 @@ void SpdDownsampleH(FfxUInt32x2 workGroupID, FfxUInt32 localInvocationIndex, Ffx
     SpdDownsampleH(workGroupID + workGroupOffset, localInvocationIndex, mips, numWorkGroups, slice);
 }
 
-#endif // #if FFX_HALF
+#endif // #if 321
 #endif // #if defined(FFX_GPU)

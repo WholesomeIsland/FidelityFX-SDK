@@ -426,7 +426,7 @@ if (FFX_AUTO_COMPILE_SHADERS)
 else()
     set(FFX_SC_DEPENDENT_TARGET ffx_backend_dx12_shaders_${FFX_PLATFORM_NAME})
     add_custom_target(${FFX_SC_DEPENDENT_TARGET})
-    #add_dependencies(ffx_backend_dx12_${FFX_PLATFORM_NAME} ${FFX_SC_DEPENDENT_TARGET})
+    add_dependencies(ffx_backend_dx12_${FFX_PLATFORM_NAME} ${FFX_SC_DEPENDENT_TARGET})
 endif()
 
 if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.20.0")
